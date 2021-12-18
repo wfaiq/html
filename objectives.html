@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>Yasmin Aqilah Personal Webpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+  
+<audio controls autoplay>
+    <source src="music/intro.mp3" type="audio/mpeg">
+  </audio>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-large w3-light-grey">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="summary.html" class="w3-button w3-block">Summary</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="objectives.html" class="w3-button w3-block">Objectives</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="edu.html" class="w3-button w3-block">Education</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="skills.html" class="w3-button w3-block">Skills</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="curriculars.html" class="w3-button w3-block">Curriculars</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="exp.html" class="w3-button w3-block">Expereiences</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="achieve.html" class="w3-button w3-block">Achievements</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="ref.html" class="w3-button w3-block">References</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+
+  <div class="w3-panel">
+    <h1><b>Yasmin Aqilah</b></h1>
+    <p>Personal Website</p>
+  </div>
+
+  <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+<p align="center"><h1><font color="red"><marque behavior="alternate">My Career Objectives</font></h1>
+      <p align="justify">
+      
+Seeking a position as an Account Executive, Junior Internal Auditor, Human Resource Executive or any other relevant position that suitable with my qualification, where I can bring immediate and strategic value and develop current skill set further.</p>
+
+
+  </div>
+
+
+
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4>Copyright by Yasmin Aqilah © 2021</h4>
+  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ 
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
